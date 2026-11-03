@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #101827;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.header {
+  text-align: center;
+  padding: 35px 15px;
+  background: linear-gradient(135deg, #172554, #312e81);
+}
+
+.header h1 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.header p {
+  color: #cbd5e1;
+}
+
+.container {
+  width: 90%;
+  max-width: 850px;
+  margin: 30px auto;
+}
+
+.welcome {
+  text-align: center;
+  padding: 25px 10px;
+}
+
+.welcome h2 {
+  color: #60a5fa;
+  margin-bottom: 10px;
+}
+
+.chat-box {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 15px;
+  padding: 18px;
+  margin: 20px 0;
+}
+
+.chat-messages {
+  min-height: 180px;
+  max-height: 350px;
+  overflow-y: auto;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.message {
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  max-width: 85%;
+  overflow-wrap: anywhere;
+}
+
+.bot {
+  background: #334155;
+  margin-right: auto;
+}
+
+.user {
+  background: #2563eb;
+  margin-left: auto;
+}
+
+#chatForm {
+  display: flex;
+  gap: 10px;
+}
+
+#userInput {
+  flex: 1;
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  background: #0f172a;
+  color: white;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.features {
+  margin-top: 35px;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.feature-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  padding: 22px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.feature-card h3 {
+  color: #60a5fa;
+  margin-bottom: 8px;
+}
+
+.feature-card p {
+  color: #cbd5e1;
+}
+
+footer {
+  text-align: center;
+  padding: 25px 10px;
+  color: #94a3b8;
+  border-top: 1px solid #334155;
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 25px;
+  }
+
+  #chatForm {
+    flex-direction: column;
+  }
+
+  #chatForm button {
+    width: 100%;
+  }
+  }
